@@ -9,22 +9,27 @@
 모델별 혼동 행렬은 아래와 같습니다. 이미지 파일 경로와 함께 설명을 포함합니다:
 
 1. **GRU**
+
    ![GRU 혼동 행렬](https://github.com/user-attachments/assets/2f116bbe-2604-4993-a6c3-bcdde21ab5ac)
    - GRU 기반 모델은 훈련이 빠르고 계산 효율성이 높아 경량 모델 구현에 적합합니다.
 
-3. **LSTM**
+2. **LSTM**
+
    ![LSTM 혼동 행렬](https://github.com/user-attachments/assets/7a357c60-aa0c-4480-b1f5-42a92dcd6c5f)
    - LSTM은 시간적 종속성을 잘 학습하며, 적은 데이터에서도 안정적인 성능을 보입니다.
 
-5. **Transformer**
+3. **Transformer**
+   
    ![Transformer 혼동 행렬](https://github.com/user-attachments/assets/bd4a9d5a-690d-41ec-8afd-6bb3cefc1bfb)
    - Transformer는 복잡한 데이터 구조를 학습하기에 적합하며, 장기적 의존성을 효과적으로 학습합니다.
 
-6. **Voting Ensemble**
+4. **Voting Ensemble**
+   
    ![Voting 앙상블 혼동 행렬](https://github.com/user-attachments/assets/72845332-0db7-492c-8914-1fa9032f9d44)
    - 각 모델의 예측을 단순히 결합하여 최종 출력을 생성한 결과입니다.
 
-8. **Weighted Voting Ensemble**
+5. **Weighted Voting Ensemble**
+    
    ![Weighted Voting 앙상블 혼동 행렬](https://github.com/user-attachments/assets/d7995b0b-d40d-4486-a098-3e2603e55bc4)
    - 각 모델의 성능에 따라 가중치를 부여한 앙상블 기법입니다. 가중치: LSTM (0.5), GRU (0.3), Transformer (0.2).
 
